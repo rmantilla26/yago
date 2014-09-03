@@ -7,15 +7,56 @@
 //
 
 #import "YAGAppDelegate.h"
+#import <Parse/Parse.h>
+#import <GoogleMaps/GoogleMaps.h>
+#import "YAGHomeVC.h"
 
 @implementation YAGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    YAGHomeVC *vc =[[YAGHomeVC alloc]initWithNibName:@"YAGHomeVC" bundle:nil];
+    UINavigationController *nv = [[UINavigationController alloc]initWithRootViewController:vc];
+    self.window.rootViewController = nv;
+    
+    //Google Maps
+    [GMSServices provideAPIKey:@"AIzaSyBDNcKDUySm7k2KOj1q3cwp61obEbdNCA8"];
+    
+    //Parse
+    [Parse setApplicationId:@"JfZXvj7FPVwqwAz37Cl0shonqKam28mZWLi5oWvq"
+                  clientKey:@"WUj0iTUtHpSYDDNTcYvbrzkVuuBtt7nW2n7Y4J6W"];
+    
+    // When users indicate they are Giants fans, we subscribe them to that channel.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation addUniqueObject:@"Llueve" forKey:@"channels"];
+    [currentInstallation saveInBackground];
+    
+    //Analytics
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    //Push Notification
+    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
+     UIRemoteNotificationTypeAlert|
+     UIRemoteNotificationTypeSound];
+    
     return YES;
 }
-							
+
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -14,13 +14,40 @@
 		ED70247719B748380014814C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70247619B748380014814C /* main.m */; };
 		ED70247B19B748380014814C /* YAGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70247A19B748380014814C /* YAGAppDelegate.m */; };
 		ED70247E19B748380014814C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED70247C19B748380014814C /* Main.storyboard */; };
-		ED70248119B748380014814C /* YAGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70248019B748380014814C /* YAGViewController.m */; };
 		ED70248319B748380014814C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED70248219B748380014814C /* Images.xcassets */; };
 		ED70248A19B748380014814C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED70248919B748380014814C /* XCTest.framework */; };
 		ED70248B19B748380014814C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED70246A19B748380014814C /* Foundation.framework */; };
 		ED70248C19B748380014814C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED70246E19B748380014814C /* UIKit.framework */; };
 		ED70249419B748380014814C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED70249219B748380014814C /* InfoPlist.strings */; };
 		ED70249619B748380014814C /* YagoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70249519B748380014814C /* YagoTests.m */; };
+		ED7024A119B7485C0014814C /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ED70249F19B7485C0014814C /* GoogleMaps.bundle */; };
+		ED7024A219B7485C0014814C /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024A019B7485C0014814C /* GoogleMaps.framework */; };
+		ED7024A919B748630014814C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024A519B748630014814C /* FacebookSDK.framework */; };
+		ED7024AA19B748630014814C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024A619B748630014814C /* Parse.framework */; };
+		ED7024AB19B748630014814C /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024A719B748630014814C /* ParseFacebookUtils.framework */; };
+		ED7024AF19B749120014814C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024AE19B749120014814C /* AudioToolbox.framework */; };
+		ED7024B119B7491B0014814C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024B019B7491B0014814C /* CFNetwork.framework */; };
+		ED7024B319B7492C0014814C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024B219B7492C0014814C /* CoreLocation.framework */; };
+		ED7024B519B749340014814C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024B419B749340014814C /* libz.dylib */; };
+		ED7024B719B7493C0014814C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024B619B7493C0014814C /* MobileCoreServices.framework */; };
+		ED7024B919B749430014814C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024B819B749430014814C /* QuartzCore.framework */; };
+		ED7024BB19B7494B0014814C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024BA19B7494B0014814C /* Security.framework */; };
+		ED7024BD19B749510014814C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024BC19B749510014814C /* StoreKit.framework */; };
+		ED7024BF19B749590014814C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024BE19B749590014814C /* SystemConfiguration.framework */; };
+		ED7024C119B749C70014814C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024C019B749C70014814C /* AVFoundation.framework */; };
+		ED7024C319B749D40014814C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024C219B749D40014814C /* CoreData.framework */; };
+		ED7024C519B749E80014814C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024C419B749E80014814C /* CoreText.framework */; };
+		ED7024C719B749F10014814C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024C619B749F10014814C /* GLKit.framework */; };
+		ED7024C919B749F80014814C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024C819B749F70014814C /* ImageIO.framework */; };
+		ED7024CB19B74A010014814C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024CA19B74A010014814C /* libc++.dylib */; };
+		ED7024CD19B74A080014814C /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024CC19B74A080014814C /* libicucore.dylib */; };
+		ED7024CF19B74A160014814C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024CE19B74A160014814C /* OpenGLES.framework */; };
+		ED7024D119B74A5B0014814C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024D019B74A5B0014814C /* Social.framework */; };
+		ED7024D319B74A610014814C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024D219B74A610014814C /* Accounts.framework */; };
+		ED7024D819B74B090014814C /* YAGMapReportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7024D619B74B090014814C /* YAGMapReportVC.m */; };
+		ED7024D919B74B090014814C /* YAGMapReportVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7024D719B74B090014814C /* YAGMapReportVC.xib */; };
+		ED7024DE19B74F7E0014814C /* YAGHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7024DC19B74F7E0014814C /* YAGHomeVC.m */; };
+		ED7024DF19B74F7E0014814C /* YAGHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7024DD19B74F7E0014814C /* YAGHomeVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +72,42 @@
 		ED70247919B748380014814C /* YAGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAGAppDelegate.h; sourceTree = "<group>"; };
 		ED70247A19B748380014814C /* YAGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAGAppDelegate.m; sourceTree = "<group>"; };
 		ED70247D19B748380014814C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ED70247F19B748380014814C /* YAGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAGViewController.h; sourceTree = "<group>"; };
-		ED70248019B748380014814C /* YAGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAGViewController.m; sourceTree = "<group>"; };
 		ED70248219B748380014814C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ED70248819B748380014814C /* YagoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YagoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED70248919B748380014814C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		ED70249119B748380014814C /* YagoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YagoTests-Info.plist"; sourceTree = "<group>"; };
 		ED70249319B748380014814C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ED70249519B748380014814C /* YagoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YagoTests.m; sourceTree = "<group>"; };
+		ED70249F19B7485C0014814C /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		ED7024A019B7485C0014814C /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		ED7024A519B748630014814C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		ED7024A619B748630014814C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		ED7024A719B748630014814C /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		ED7024AE19B749120014814C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		ED7024B019B7491B0014814C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		ED7024B219B7492C0014814C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ED7024B419B749340014814C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		ED7024B619B7493C0014814C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		ED7024B819B749430014814C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ED7024BA19B7494B0014814C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ED7024BC19B749510014814C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		ED7024BE19B749590014814C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ED7024C019B749C70014814C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		ED7024C219B749D40014814C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ED7024C419B749E80014814C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		ED7024C619B749F10014814C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		ED7024C819B749F70014814C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		ED7024CA19B74A010014814C /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		ED7024CC19B74A080014814C /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		ED7024CE19B74A160014814C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		ED7024D019B74A5B0014814C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		ED7024D219B74A610014814C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		ED7024D519B74B090014814C /* YAGMapReportVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAGMapReportVC.h; sourceTree = "<group>"; };
+		ED7024D619B74B090014814C /* YAGMapReportVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAGMapReportVC.m; sourceTree = "<group>"; };
+		ED7024D719B74B090014814C /* YAGMapReportVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YAGMapReportVC.xib; sourceTree = "<group>"; };
+		ED7024DB19B74F7E0014814C /* YAGHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAGHomeVC.h; sourceTree = "<group>"; };
+		ED7024DC19B74F7E0014814C /* YAGHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAGHomeVC.m; sourceTree = "<group>"; };
+		ED7024DD19B74F7E0014814C /* YAGHomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YAGHomeVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +115,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED7024D319B74A610014814C /* Accounts.framework in Frameworks */,
+				ED7024D119B74A5B0014814C /* Social.framework in Frameworks */,
+				ED7024BF19B749590014814C /* SystemConfiguration.framework in Frameworks */,
+				ED7024B919B749430014814C /* QuartzCore.framework in Frameworks */,
+				ED7024CF19B74A160014814C /* OpenGLES.framework in Frameworks */,
+				ED7024B519B749340014814C /* libz.dylib in Frameworks */,
+				ED7024CD19B74A080014814C /* libicucore.dylib in Frameworks */,
+				ED7024CB19B74A010014814C /* libc++.dylib in Frameworks */,
+				ED7024C919B749F80014814C /* ImageIO.framework in Frameworks */,
+				ED7024C719B749F10014814C /* GLKit.framework in Frameworks */,
+				ED7024C519B749E80014814C /* CoreText.framework in Frameworks */,
+				ED7024B319B7492C0014814C /* CoreLocation.framework in Frameworks */,
+				ED7024C319B749D40014814C /* CoreData.framework in Frameworks */,
+				ED7024C119B749C70014814C /* AVFoundation.framework in Frameworks */,
+				ED7024BD19B749510014814C /* StoreKit.framework in Frameworks */,
+				ED7024BB19B7494B0014814C /* Security.framework in Frameworks */,
+				ED7024B719B7493C0014814C /* MobileCoreServices.framework in Frameworks */,
 				ED70246D19B748380014814C /* CoreGraphics.framework in Frameworks */,
+				ED7024B119B7491B0014814C /* CFNetwork.framework in Frameworks */,
+				ED7024AF19B749120014814C /* AudioToolbox.framework in Frameworks */,
 				ED70246F19B748380014814C /* UIKit.framework in Frameworks */,
+				ED7024AA19B748630014814C /* Parse.framework in Frameworks */,
+				ED7024A219B7485C0014814C /* GoogleMaps.framework in Frameworks */,
 				ED70246B19B748380014814C /* Foundation.framework in Frameworks */,
+				ED7024AB19B748630014814C /* ParseFacebookUtils.framework in Frameworks */,
+				ED7024A919B748630014814C /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +179,28 @@
 		ED70246919B748380014814C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED7024D219B74A610014814C /* Accounts.framework */,
+				ED7024D019B74A5B0014814C /* Social.framework */,
+				ED7024CE19B74A160014814C /* OpenGLES.framework */,
+				ED7024CC19B74A080014814C /* libicucore.dylib */,
+				ED7024CA19B74A010014814C /* libc++.dylib */,
+				ED7024C819B749F70014814C /* ImageIO.framework */,
+				ED7024C619B749F10014814C /* GLKit.framework */,
+				ED7024C419B749E80014814C /* CoreText.framework */,
+				ED7024C219B749D40014814C /* CoreData.framework */,
+				ED7024C019B749C70014814C /* AVFoundation.framework */,
+				ED7024BE19B749590014814C /* SystemConfiguration.framework */,
+				ED7024BC19B749510014814C /* StoreKit.framework */,
+				ED7024BA19B7494B0014814C /* Security.framework */,
+				ED7024B819B749430014814C /* QuartzCore.framework */,
+				ED7024B619B7493C0014814C /* MobileCoreServices.framework */,
+				ED7024B419B749340014814C /* libz.dylib */,
+				ED7024B219B7492C0014814C /* CoreLocation.framework */,
+				ED7024B019B7491B0014814C /* CFNetwork.framework */,
+				ED7024AE19B749120014814C /* AudioToolbox.framework */,
+				ED7024A319B748630014814C /* parse-library */,
+				ED70249F19B7485C0014814C /* GoogleMaps.bundle */,
+				ED7024A019B7485C0014814C /* GoogleMaps.framework */,
 				ED70246A19B748380014814C /* Foundation.framework */,
 				ED70246C19B748380014814C /* CoreGraphics.framework */,
 				ED70246E19B748380014814C /* UIKit.framework */,
@@ -112,11 +212,11 @@
 		ED70247019B748380014814C /* Yago */ = {
 			isa = PBXGroup;
 			children = (
+				ED7024AC19B748930014814C /* Model */,
+				ED7024AD19B748930014814C /* Views */,
 				ED70247919B748380014814C /* YAGAppDelegate.h */,
 				ED70247A19B748380014814C /* YAGAppDelegate.m */,
 				ED70247C19B748380014814C /* Main.storyboard */,
-				ED70247F19B748380014814C /* YAGViewController.h */,
-				ED70248019B748380014814C /* YAGViewController.m */,
 				ED70248219B748380014814C /* Images.xcassets */,
 				ED70247119B748380014814C /* Supporting Files */,
 			);
@@ -150,6 +250,52 @@
 				ED70249219B748380014814C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED7024A319B748630014814C /* parse-library */ = {
+			isa = PBXGroup;
+			children = (
+				ED7024A519B748630014814C /* FacebookSDK.framework */,
+				ED7024A619B748630014814C /* Parse.framework */,
+				ED7024A719B748630014814C /* ParseFacebookUtils.framework */,
+			);
+			path = "parse-library";
+			sourceTree = "<group>";
+		};
+		ED7024AC19B748930014814C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED7024AD19B748930014814C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED7024DA19B74F6B0014814C /* YAGHomeVC */,
+				ED7024D419B74AC70014814C /* YAGMapReportVC */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED7024D419B74AC70014814C /* YAGMapReportVC */ = {
+			isa = PBXGroup;
+			children = (
+				ED7024D519B74B090014814C /* YAGMapReportVC.h */,
+				ED7024D619B74B090014814C /* YAGMapReportVC.m */,
+				ED7024D719B74B090014814C /* YAGMapReportVC.xib */,
+			);
+			path = YAGMapReportVC;
+			sourceTree = "<group>";
+		};
+		ED7024DA19B74F6B0014814C /* YAGHomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				ED7024DB19B74F7E0014814C /* YAGHomeVC.h */,
+				ED7024DC19B74F7E0014814C /* YAGHomeVC.m */,
+				ED7024DD19B74F7E0014814C /* YAGHomeVC.xib */,
+			);
+			path = YAGHomeVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +376,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED70248319B748380014814C /* Images.xcassets in Resources */,
+				ED7024DF19B74F7E0014814C /* YAGHomeVC.xib in Resources */,
 				ED70247519B748380014814C /* InfoPlist.strings in Resources */,
 				ED70247E19B748380014814C /* Main.storyboard in Resources */,
+				ED7024D919B74B090014814C /* YAGMapReportVC.xib in Resources */,
+				ED7024A119B7485C0014814C /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,8 +400,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED70247B19B748380014814C /* YAGAppDelegate.m in Sources */,
+				ED7024DE19B74F7E0014814C /* YAGHomeVC.m in Sources */,
 				ED70247719B748380014814C /* main.m in Sources */,
-				ED70248119B748380014814C /* YAGViewController.m in Sources */,
+				ED7024D819B74B090014814C /* YAGMapReportVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +468,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Raul Mantilla (67VL6SFRBL)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -356,6 +507,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Raul Mantilla (67VL6SFRBL)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -377,9 +529,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/parse-library",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Yago/Yago-Prefix.pch";
 				INFOPLIST_FILE = "Yago/Yago-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -390,9 +548,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/parse-library",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Yago/Yago-Prefix.pch";
 				INFOPLIST_FILE = "Yago/Yago-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,6 +621,7 @@
 				ED70249B19B748380014814C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED70249C19B748380014814C /* Build configuration list for PBXNativeTarget "YagoTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +630,7 @@
 				ED70249E19B748380014814C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
