@@ -17,9 +17,9 @@
 {
     // Override point for customization after application launch.
     
-    YAGHomeVC *vc =[[YAGHomeVC alloc]initWithNibName:@"YAGHomeVC" bundle:nil];
-    UINavigationController *nv = [[UINavigationController alloc]initWithRootViewController:vc];
-    self.window.rootViewController = nv;
+    //YAGHomeVC *vc =[[YAGHomeVC alloc]initWithNibName:@"YAGHomeVC" bundle:nil];
+    //UINavigationController *nv = [[UINavigationController alloc]initWithRootViewController:vc];
+    //self.window.rootViewController = nv;
     
     //Google Maps
     [GMSServices provideAPIKey:@"AIzaSyBDNcKDUySm7k2KOj1q3cwp61obEbdNCA8"];

@@ -18,6 +18,4 @@
 
 @property (nonatomic, retain) CLLocationManager *locationManager;
 
-@property(nonatomic,strong) IBOutlet UIView *mapGoogleView_;
-
 @end

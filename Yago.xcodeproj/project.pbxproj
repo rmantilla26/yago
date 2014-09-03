@@ -45,9 +45,7 @@
 		ED7024D119B74A5B0014814C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024D019B74A5B0014814C /* Social.framework */; };
 		ED7024D319B74A610014814C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024D219B74A610014814C /* Accounts.framework */; };
 		ED7024D819B74B090014814C /* YAGMapReportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7024D619B74B090014814C /* YAGMapReportVC.m */; };
-		ED7024D919B74B090014814C /* YAGMapReportVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7024D719B74B090014814C /* YAGMapReportVC.xib */; };
 		ED7024DE19B74F7E0014814C /* YAGHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7024DC19B74F7E0014814C /* YAGHomeVC.m */; };
-		ED7024DF19B74F7E0014814C /* YAGHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7024DD19B74F7E0014814C /* YAGHomeVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,10 +102,8 @@
 		ED7024D219B74A610014814C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		ED7024D519B74B090014814C /* YAGMapReportVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAGMapReportVC.h; sourceTree = "<group>"; };
 		ED7024D619B74B090014814C /* YAGMapReportVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAGMapReportVC.m; sourceTree = "<group>"; };
-		ED7024D719B74B090014814C /* YAGMapReportVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YAGMapReportVC.xib; sourceTree = "<group>"; };
 		ED7024DB19B74F7E0014814C /* YAGHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAGHomeVC.h; sourceTree = "<group>"; };
 		ED7024DC19B74F7E0014814C /* YAGHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAGHomeVC.m; sourceTree = "<group>"; };
-		ED7024DD19B74F7E0014814C /* YAGHomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YAGHomeVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,7 +279,6 @@
 			children = (
 				ED7024D519B74B090014814C /* YAGMapReportVC.h */,
 				ED7024D619B74B090014814C /* YAGMapReportVC.m */,
-				ED7024D719B74B090014814C /* YAGMapReportVC.xib */,
 			);
 			path = YAGMapReportVC;
 			sourceTree = "<group>";
@@ -293,7 +288,6 @@
 			children = (
 				ED7024DB19B74F7E0014814C /* YAGHomeVC.h */,
 				ED7024DC19B74F7E0014814C /* YAGHomeVC.m */,
-				ED7024DD19B74F7E0014814C /* YAGHomeVC.xib */,
 			);
 			path = YAGHomeVC;
 			sourceTree = "<group>";
@@ -376,10 +370,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED70248319B748380014814C /* Images.xcassets in Resources */,
-				ED7024DF19B74F7E0014814C /* YAGHomeVC.xib in Resources */,
 				ED70247519B748380014814C /* InfoPlist.strings in Resources */,
 				ED70247E19B748380014814C /* Main.storyboard in Resources */,
-				ED7024D919B74B090014814C /* YAGMapReportVC.xib in Resources */,
 				ED7024A119B7485C0014814C /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

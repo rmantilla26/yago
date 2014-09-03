@@ -46,7 +46,8 @@
 - (IBAction)goToMapReport:(id)sender {
     
     YAGMapReportVC *vc = [[YAGMapReportVC alloc]initWithNibName:@"YAGMapReportVC" bundle:nil];
-    [self.navigationController  presentViewController:vc animated:YES completion:nil];
+    UINavigationController *nv = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self.navigationController  presentViewController:nv animated:YES completion:nil];
 }
 
 @end

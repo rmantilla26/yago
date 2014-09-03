@@ -90,7 +90,7 @@
                                                                  zoom:12];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     mapView_.myLocationEnabled = YES;
-    self.mapGoogleView_ = mapView_;
+    self.view = mapView_;
     
     [mapView_ clear];
     
