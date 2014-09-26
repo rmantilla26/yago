@@ -11,10 +11,11 @@
 #import <CoreLocation/CoreLocation.h>
 #import <GoogleMaps/GoogleMaps.h>
 
-@interface YAGMapReportVC : UIViewController<CLLocationManagerDelegate,UIAlertViewDelegate>
+@interface YAGMapReportVC : UIViewController<CLLocationManagerDelegate,UIAlertViewDelegate,GMSMapViewDelegate>
 
 @property(nonatomic,assign) double latitude;
 @property(nonatomic,assign) double longitude;
+@property(nonatomic,strong) IBOutlet  GMSMapView *mapView_;
 
 @property (nonatomic, retain) CLLocationManager *locationManager;
 

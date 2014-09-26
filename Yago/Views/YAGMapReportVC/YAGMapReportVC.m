@@ -14,9 +14,10 @@
 @end
 
 @implementation YAGMapReportVC{
-    GMSMapView *mapView_;
+   
 }
 
+@synthesize mapView_;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -90,7 +91,8 @@
                                                                  zoom:12];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     mapView_.myLocationEnabled = YES;
-    self.view = mapView_;
+    mapView_.delegate = self;
+    //self.view = mapView_;
     
     [mapView_ clear];
     
@@ -104,7 +106,7 @@
     
     NSDate *now = [NSDate date];
     NSDateComponents *hours = [NSDateComponents new];
-    [hours setHour:-1];
+    [hours setHour:-100000];
     NSCalendar *cal = [NSCalendar currentCalendar];
     NSDate *hoursAgo = [cal dateByAddingComponents:hours toDate:now options:0];
     

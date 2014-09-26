@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A8F2EF419D5EF3500B85794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8F2EF319D5EF3500B85794 /* Main.storyboard */; };
 		ED70246B19B748380014814C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED70246A19B748380014814C /* Foundation.framework */; };
 		ED70246D19B748380014814C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED70246C19B748380014814C /* CoreGraphics.framework */; };
 		ED70246F19B748380014814C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED70246E19B748380014814C /* UIKit.framework */; };
 		ED70247519B748380014814C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED70247319B748380014814C /* InfoPlist.strings */; };
 		ED70247719B748380014814C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70247619B748380014814C /* main.m */; };
 		ED70247B19B748380014814C /* YAGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70247A19B748380014814C /* YAGAppDelegate.m */; };
-		ED70247E19B748380014814C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED70247C19B748380014814C /* Main.storyboard */; };
+		ED70247E19B748380014814C /* Main_.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED70247C19B748380014814C /* Main_.storyboard */; };
 		ED70248319B748380014814C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED70248219B748380014814C /* Images.xcassets */; };
 		ED70248A19B748380014814C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED70248919B748380014814C /* XCTest.framework */; };
 		ED70248B19B748380014814C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED70246A19B748380014814C /* Foundation.framework */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A8F2EF319D5EF3500B85794 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ED70246719B748380014814C /* Yago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED70246A19B748380014814C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ED70246C19B748380014814C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -69,7 +71,7 @@
 		ED70247819B748380014814C /* Yago-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yago-Prefix.pch"; sourceTree = "<group>"; };
 		ED70247919B748380014814C /* YAGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAGAppDelegate.h; sourceTree = "<group>"; };
 		ED70247A19B748380014814C /* YAGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAGAppDelegate.m; sourceTree = "<group>"; };
-		ED70247D19B748380014814C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED70247D19B748380014814C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_.storyboard; sourceTree = "<group>"; };
 		ED70248219B748380014814C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ED70248819B748380014814C /* YagoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YagoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED70248919B748380014814C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -208,11 +210,12 @@
 		ED70247019B748380014814C /* Yago */ = {
 			isa = PBXGroup;
 			children = (
+				9A8F2EF319D5EF3500B85794 /* Main.storyboard */,
 				ED7024AC19B748930014814C /* Model */,
 				ED7024AD19B748930014814C /* Views */,
 				ED70247919B748380014814C /* YAGAppDelegate.h */,
 				ED70247A19B748380014814C /* YAGAppDelegate.m */,
-				ED70247C19B748380014814C /* Main.storyboard */,
+				ED70247C19B748380014814C /* Main_.storyboard */,
 				ED70248219B748380014814C /* Images.xcassets */,
 				ED70247119B748380014814C /* Supporting Files */,
 			);
@@ -340,6 +343,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = koombea;
 				TargetAttributes = {
+					ED70246619B748380014814C = {
+						DevelopmentTeam = SHCLPJTU4V;
+					};
 					ED70248719B748380014814C = {
 						TestTargetID = ED70246619B748380014814C;
 					};
@@ -370,8 +376,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED70248319B748380014814C /* Images.xcassets in Resources */,
+				9A8F2EF419D5EF3500B85794 /* Main.storyboard in Resources */,
 				ED70247519B748380014814C /* InfoPlist.strings in Resources */,
-				ED70247E19B748380014814C /* Main.storyboard in Resources */,
+				ED70247E19B748380014814C /* Main_.storyboard in Resources */,
 				ED7024A119B7485C0014814C /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,12 +432,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		ED70247C19B748380014814C /* Main.storyboard */ = {
+		ED70247C19B748380014814C /* Main_.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ED70247D19B748380014814C /* Base */,
 			);
-			name = Main.storyboard;
+			name = Main_.storyboard;
 			sourceTree = "<group>";
 		};
 		ED70249219B748380014814C /* InfoPlist.strings */ = {
@@ -521,6 +528,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -540,6 +548,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
