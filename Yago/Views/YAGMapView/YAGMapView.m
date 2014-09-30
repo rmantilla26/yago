@@ -8,8 +8,11 @@
 
 #import "YAGMapView.h"
 #import "Report.h"
+#import "LocationManager.h"
 
 @interface YAGMapView ()
+
+@property (strong, nonatomic) LocationManager *locationManager;
 
 @end
 
@@ -18,13 +21,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    [self.mapView addObserver:self forKeyPath:@"myLocation" options:0 context:nil];
-    self.mapView.delegate = self;
-    self.refreshMapCamera = true;
-    dispatch_async(dispatch_get_main_queue(), ^{
-        self.mapView.myLocationEnabled = YES;
-    });
+    
+    self.locationManager  = [[LocationManager alloc]init];
+    [self.locationManager currentLocationSuccess:^(double latitude, double longitude) {
+    
+        [self.mapView addObserver:self forKeyPath:@"myLocation" options:0 context:nil];
+        self.mapView.delegate = self;
+        self.refreshMapCamera = true;
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.mapView.myLocationEnabled = YES;
+        });
+        
+    } failure:^(NSError *error) {
+    
+        //FALSE
+        
+    }];
+    
+    }
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status{
+    
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
@@ -34,10 +52,10 @@
         self.latitude = location.coordinate.latitude;
         self.longitude = location.coordinate.longitude;
         
-        //if (self.latitude == 0) {
+        if (self.latitude == 0) {
             self.latitude = DEFAULT_LATITUDE;
             self.longitude = DEFAULT_LONGITUDE;
-        //}
+        }
         
         if (self.refreshMapCamera) {
             self.refreshMapCamera = false;

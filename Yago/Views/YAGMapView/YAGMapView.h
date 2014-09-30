@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <GoogleMaps/GoogleMaps.h>
 
-@interface YAGMapView : UIViewController<GMSMapViewDelegate,CLLocationManagerDelegate>
+@interface YAGMapView : UIViewController<GMSMapViewDelegate>
 
 @property(nonatomic,assign) double latitude;
 @property(nonatomic,assign) double longitude;
