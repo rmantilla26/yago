@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		9A8F2EF419D5EF3500B85794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8F2EF319D5EF3500B85794 /* Main.storyboard */; };
+		ED0A368F19DAD7490011DDB9 /* YAGMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A368E19DAD7490011DDB9 /* YAGMapView.m */; };
+		ED16AC8619DA5CAE009347F1 /* Report.m in Sources */ = {isa = PBXBuildFile; fileRef = ED16AC8519DA5CAE009347F1 /* Report.m */; };
+		ED16AC8919DA5CC2009347F1 /* MapReport.m in Sources */ = {isa = PBXBuildFile; fileRef = ED16AC8819DA5CC2009347F1 /* MapReport.m */; };
+		ED16ACAB19DA5E0A009347F1 /* YAGMapReportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED16ACA519DA5E09009347F1 /* YAGMapReportVC.m */; };
+		ED16ACAC19DA5E0A009347F1 /* YAGReportTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED16ACA919DA5E09009347F1 /* YAGReportTVCell.m */; };
+		ED16ACAD19DA5E0A009347F1 /* YAGReportTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED16ACAA19DA5E0A009347F1 /* YAGReportTVCell.xib */; };
 		ED70246B19B748380014814C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED70246A19B748380014814C /* Foundation.framework */; };
 		ED70246D19B748380014814C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED70246C19B748380014814C /* CoreGraphics.framework */; };
 		ED70246F19B748380014814C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED70246E19B748380014814C /* UIKit.framework */; };
@@ -45,8 +51,6 @@
 		ED7024CF19B74A160014814C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024CE19B74A160014814C /* OpenGLES.framework */; };
 		ED7024D119B74A5B0014814C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024D019B74A5B0014814C /* Social.framework */; };
 		ED7024D319B74A610014814C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7024D219B74A610014814C /* Accounts.framework */; };
-		ED7024D819B74B090014814C /* YAGMapReportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7024D619B74B090014814C /* YAGMapReportVC.m */; };
-		ED7024DE19B74F7E0014814C /* YAGHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7024DC19B74F7E0014814C /* YAGHomeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,18 @@
 
 /* Begin PBXFileReference section */
 		9A8F2EF319D5EF3500B85794 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ED0A368D19DAD7490011DDB9 /* YAGMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAGMapView.h; sourceTree = "<group>"; };
+		ED0A368E19DAD7490011DDB9 /* YAGMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAGMapView.m; sourceTree = "<group>"; };
+		ED0A369119DAE20E0011DDB9 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		ED16AC8419DA5CAE009347F1 /* Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Report.h; sourceTree = "<group>"; };
+		ED16AC8519DA5CAE009347F1 /* Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Report.m; sourceTree = "<group>"; };
+		ED16AC8719DA5CC2009347F1 /* MapReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapReport.h; sourceTree = "<group>"; };
+		ED16AC8819DA5CC2009347F1 /* MapReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapReport.m; sourceTree = "<group>"; };
+		ED16ACA419DA5E09009347F1 /* YAGMapReportVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAGMapReportVC.h; sourceTree = "<group>"; };
+		ED16ACA519DA5E09009347F1 /* YAGMapReportVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAGMapReportVC.m; sourceTree = "<group>"; };
+		ED16ACA819DA5E09009347F1 /* YAGReportTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAGReportTVCell.h; sourceTree = "<group>"; };
+		ED16ACA919DA5E09009347F1 /* YAGReportTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAGReportTVCell.m; sourceTree = "<group>"; };
+		ED16ACAA19DA5E0A009347F1 /* YAGReportTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YAGReportTVCell.xib; sourceTree = "<group>"; };
 		ED70246719B748380014814C /* Yago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED70246A19B748380014814C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ED70246C19B748380014814C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -102,10 +118,6 @@
 		ED7024CE19B74A160014814C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		ED7024D019B74A5B0014814C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		ED7024D219B74A610014814C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
-		ED7024D519B74B090014814C /* YAGMapReportVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAGMapReportVC.h; sourceTree = "<group>"; };
-		ED7024D619B74B090014814C /* YAGMapReportVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAGMapReportVC.m; sourceTree = "<group>"; };
-		ED7024DB19B74F7E0014814C /* YAGHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAGHomeVC.h; sourceTree = "<group>"; };
-		ED7024DC19B74F7E0014814C /* YAGHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAGHomeVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +167,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED087AB319DA3F7B0001074F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ED0A368C19DAD72F0011DDB9 /* YAGMapView */ = {
+			isa = PBXGroup;
+			children = (
+				ED0A368D19DAD7490011DDB9 /* YAGMapView.h */,
+				ED0A368E19DAD7490011DDB9 /* YAGMapView.m */,
+			);
+			path = YAGMapView;
+			sourceTree = "<group>";
+		};
+		ED0A369019DAE1FE0011DDB9 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				ED0A369119DAE20E0011DDB9 /* Constants.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		ED16ACA319DA5E09009347F1 /* YAGMapReportVC */ = {
+			isa = PBXGroup;
+			children = (
+				ED16ACA419DA5E09009347F1 /* YAGMapReportVC.h */,
+				ED16ACA519DA5E09009347F1 /* YAGMapReportVC.m */,
+				ED16ACA619DA5E09009347F1 /* YAGReportTV */,
+			);
+			path = YAGMapReportVC;
+			sourceTree = "<group>";
+		};
+		ED16ACA619DA5E09009347F1 /* YAGReportTV */ = {
+			isa = PBXGroup;
+			children = (
+				ED16ACA719DA5E09009347F1 /* YAGReportTVCell */,
+			);
+			path = YAGReportTV;
+			sourceTree = "<group>";
+		};
+		ED16ACA719DA5E09009347F1 /* YAGReportTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				ED16ACA819DA5E09009347F1 /* YAGReportTVCell.h */,
+				ED16ACA919DA5E09009347F1 /* YAGReportTVCell.m */,
+				ED16ACAA19DA5E0A009347F1 /* YAGReportTVCell.xib */,
+			);
+			path = YAGReportTVCell;
+			sourceTree = "<group>";
+		};
 		ED70245E19B748380014814C = {
 			isa = PBXGroup;
 			children = (
@@ -177,11 +241,11 @@
 		ED70246919B748380014814C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ED7024D219B74A610014814C /* Accounts.framework */,
 				ED7024D019B74A5B0014814C /* Social.framework */,
 				ED7024CE19B74A160014814C /* OpenGLES.framework */,
 				ED7024CC19B74A080014814C /* libicucore.dylib */,
 				ED7024CA19B74A010014814C /* libc++.dylib */,
+				ED7024D219B74A610014814C /* Accounts.framework */,
 				ED7024C819B749F70014814C /* ImageIO.framework */,
 				ED7024C619B749F10014814C /* GLKit.framework */,
 				ED7024C419B749E80014814C /* CoreText.framework */,
@@ -210,6 +274,8 @@
 		ED70247019B748380014814C /* Yago */ = {
 			isa = PBXGroup;
 			children = (
+				ED0A369019DAE1FE0011DDB9 /* Config */,
+				ED087AB319DA3F7B0001074F /* Helpers */,
 				9A8F2EF319D5EF3500B85794 /* Main.storyboard */,
 				ED7024AC19B748930014814C /* Model */,
 				ED7024AD19B748930014814C /* Views */,
@@ -264,6 +330,10 @@
 		ED7024AC19B748930014814C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ED16AC8719DA5CC2009347F1 /* MapReport.h */,
+				ED16AC8819DA5CC2009347F1 /* MapReport.m */,
+				ED16AC8419DA5CAE009347F1 /* Report.h */,
+				ED16AC8519DA5CAE009347F1 /* Report.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,28 +341,10 @@
 		ED7024AD19B748930014814C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				ED7024DA19B74F6B0014814C /* YAGHomeVC */,
-				ED7024D419B74AC70014814C /* YAGMapReportVC */,
+				ED0A368C19DAD72F0011DDB9 /* YAGMapView */,
+				ED16ACA319DA5E09009347F1 /* YAGMapReportVC */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		ED7024D419B74AC70014814C /* YAGMapReportVC */ = {
-			isa = PBXGroup;
-			children = (
-				ED7024D519B74B090014814C /* YAGMapReportVC.h */,
-				ED7024D619B74B090014814C /* YAGMapReportVC.m */,
-			);
-			path = YAGMapReportVC;
-			sourceTree = "<group>";
-		};
-		ED7024DA19B74F6B0014814C /* YAGHomeVC */ = {
-			isa = PBXGroup;
-			children = (
-				ED7024DB19B74F7E0014814C /* YAGHomeVC.h */,
-				ED7024DC19B74F7E0014814C /* YAGHomeVC.m */,
-			);
-			path = YAGHomeVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED70248319B748380014814C /* Images.xcassets in Resources */,
+				ED16ACAD19DA5E0A009347F1 /* YAGReportTVCell.xib in Resources */,
 				9A8F2EF419D5EF3500B85794 /* Main.storyboard in Resources */,
 				ED70247519B748380014814C /* InfoPlist.strings in Resources */,
 				ED70247E19B748380014814C /* Main_.storyboard in Resources */,
@@ -398,10 +451,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED16AC8919DA5CC2009347F1 /* MapReport.m in Sources */,
+				ED16AC8619DA5CAE009347F1 /* Report.m in Sources */,
 				ED70247B19B748380014814C /* YAGAppDelegate.m in Sources */,
-				ED7024DE19B74F7E0014814C /* YAGHomeVC.m in Sources */,
 				ED70247719B748380014814C /* main.m in Sources */,
-				ED7024D819B74B090014814C /* YAGMapReportVC.m in Sources */,
+				ED16ACAC19DA5E0A009347F1 /* YAGReportTVCell.m in Sources */,
+				ED0A368F19DAD7490011DDB9 /* YAGMapView.m in Sources */,
+				ED16ACAB19DA5E0A009347F1 /* YAGMapReportVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

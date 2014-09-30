@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YAGMapView.h"
+#import <GoogleMaps/GoogleMaps.h>
 
-@interface YAGMapReportVC : YAGMapView<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
-
+@interface YAGMapReportVC : UIViewController
+@property(nonatomic,strong) IBOutlet  GMSMapView *mapView_;
 @end
+

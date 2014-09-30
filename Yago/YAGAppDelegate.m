@@ -9,7 +9,6 @@
 #import "YAGAppDelegate.h"
 #import <Parse/Parse.h>
 #import <GoogleMaps/GoogleMaps.h>
-#import "YAGHomeVC.h"
 
 @implementation YAGAppDelegate
 
