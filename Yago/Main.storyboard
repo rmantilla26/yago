@@ -44,7 +44,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.41176470588235292" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GT-w8-TWO">
-                                <rect key="frame" x="222" y="256" width="80" height="80"/>
+                                <rect key="frame" x="225" y="252" width="71" height="71"/>
                                 <state key="normal" backgroundImage="buttonCheck">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
