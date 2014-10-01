@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SWTableViewCell.h"
 
-@interface YAGReportTVCell : UITableViewCell
+@interface YAGReportTVCell : SWTableViewCell
 
 @property(nonatomic,strong) IBOutlet UILabel *_description;
 @property(nonatomic,strong) IBOutlet UIButton *_thumbnail;

@@ -39,10 +39,6 @@
         
     }];
     
-    }
-
-- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status{
-    
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
@@ -69,6 +65,9 @@
 }
 
 -(void)addMarkToMap:(NSMutableArray *)reports{
+    
+    [self.mapView clear];
+    
     for (Report *report in reports) {
             CLLocationCoordinate2D circleCenter = CLLocationCoordinate2DMake(report.latitude, report.longitude);
             

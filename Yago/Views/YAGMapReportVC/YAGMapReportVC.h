@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "YAGMapView.h"
+#import "SWTableViewCell.h"
 
-@interface YAGMapReportVC : YAGMapView<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
+@interface YAGMapReportVC : YAGMapView<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate,SWTableViewCellDelegate>
 
 @end
