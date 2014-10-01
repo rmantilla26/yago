@@ -80,4 +80,17 @@
     }
 }
 
+-(void)showMarkWithIndex:(Report *)report{
+    [self.mapView clear];
+    
+    CLLocationCoordinate2D circleCenter = CLLocationCoordinate2DMake(report.latitude, report.longitude);
+    
+    self.circ = [GMSCircle circleWithPosition:circleCenter radius:500];
+    
+    self.circ.fillColor = [UIColor colorWithRed:30.0/255.0 green:144.0/255.0 blue:255.0/255.0 alpha:0.3];
+    self.circ.strokeColor = [UIColor colorWithRed:30.0/255.0 green:144.0/255.0 blue:255.0/255.0 alpha:1];
+    self.circ.strokeWidth = 1;
+    self.circ.map = self.mapView;
+}
+
 @end

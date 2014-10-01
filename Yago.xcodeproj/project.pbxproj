@@ -13,6 +13,10 @@
 		9A67F04419DCA815007687CB /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A67F03C19DCA815007687CB /* SWTableViewCell.m */; };
 		9A67F04519DCA815007687CB /* SWUtilityButtonTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A67F03E19DCA815007687CB /* SWUtilityButtonTapGestureRecognizer.m */; };
 		9A67F04619DCA815007687CB /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A67F04019DCA815007687CB /* SWUtilityButtonView.m */; };
+		9A67F05419DCB2C5007687CB /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A67F05019DCB2C5007687CB /* check@2x.png */; };
+		9A67F05519DCB2C5007687CB /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A67F05119DCB2C5007687CB /* clock@2x.png */; };
+		9A67F05619DCB2C5007687CB /* cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A67F05219DCB2C5007687CB /* cross@2x.png */; };
+		9A67F05719DCB2C5007687CB /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A67F05319DCB2C5007687CB /* list@2x.png */; };
 		9A8F2EF419D5EF3500B85794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8F2EF319D5EF3500B85794 /* Main.storyboard */; };
 		9AA0CC1919DB12CB0029030D /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA0CC1819DB12CB0029030D /* LocationManager.m */; };
 		ED0A368F19DAD7490011DDB9 /* YAGMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A368E19DAD7490011DDB9 /* YAGMapView.m */; };
@@ -83,6 +87,10 @@
 		9A67F03E19DCA815007687CB /* SWUtilityButtonTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonTapGestureRecognizer.m; sourceTree = "<group>"; };
 		9A67F03F19DCA815007687CB /* SWUtilityButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonView.h; sourceTree = "<group>"; };
 		9A67F04019DCA815007687CB /* SWUtilityButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonView.m; sourceTree = "<group>"; };
+		9A67F05019DCB2C5007687CB /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
+		9A67F05119DCB2C5007687CB /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
+		9A67F05219DCB2C5007687CB /* cross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross@2x.png"; sourceTree = "<group>"; };
+		9A67F05319DCB2C5007687CB /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
 		9A8F2EF319D5EF3500B85794 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9AA0CC1719DB12CB0029030D /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = SOURCE_ROOT; };
 		9AA0CC1819DB12CB0029030D /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = SOURCE_ROOT; };
@@ -215,6 +223,17 @@
 			path = SWTableViewCell;
 			sourceTree = "<group>";
 		};
+		9A67F04719DCB274007687CB /* github-assets */ = {
+			isa = PBXGroup;
+			children = (
+				9A67F05019DCB2C5007687CB /* check@2x.png */,
+				9A67F05119DCB2C5007687CB /* clock@2x.png */,
+				9A67F05219DCB2C5007687CB /* cross@2x.png */,
+				9A67F05319DCB2C5007687CB /* list@2x.png */,
+			);
+			path = "github-assets";
+			sourceTree = "<group>";
+		};
 		ED087AB319DA3F7B0001074F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +353,7 @@
 				ED70247A19B748380014814C /* YAGAppDelegate.m */,
 				ED70247C19B748380014814C /* Main_.storyboard */,
 				ED70248219B748380014814C /* Images.xcassets */,
+				9A67F04719DCB274007687CB /* github-assets */,
 				ED70247119B748380014814C /* Supporting Files */,
 			);
 			path = Yago;
@@ -478,11 +498,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A67F05719DCB2C5007687CB /* list@2x.png in Resources */,
 				ED70248319B748380014814C /* Images.xcassets in Resources */,
+				9A67F05619DCB2C5007687CB /* cross@2x.png in Resources */,
 				ED16ACAD19DA5E0A009347F1 /* YAGReportTVCell.xib in Resources */,
 				9A8F2EF419D5EF3500B85794 /* Main.storyboard in Resources */,
+				9A67F05419DCB2C5007687CB /* check@2x.png in Resources */,
 				ED70247519B748380014814C /* InfoPlist.strings in Resources */,
 				ED70247E19B748380014814C /* Main_.storyboard in Resources */,
+				9A67F05519DCB2C5007687CB /* clock@2x.png in Resources */,
 				ED7024A119B7485C0014814C /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

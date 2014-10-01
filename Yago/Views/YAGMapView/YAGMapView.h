@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <GoogleMaps/GoogleMaps.h>
 
+@class Report;
+
 @interface YAGMapView : UIViewController<GMSMapViewDelegate>
 
 @property(nonatomic,assign) double latitude;
@@ -19,5 +21,6 @@
 @property(nonatomic,assign) bool refreshMapCamera;
 
 -(void)addMarkToMap:(NSMutableArray *)reports;
+-(void)showMarkWithIndex:(Report *)report;
 
 @end

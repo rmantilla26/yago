@@ -121,6 +121,14 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    Report *report = [self.mapReport.reports objectAtIndex:indexPath.row];
+    [self showMarkWithIndex:report];
+}
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self addMarkToMap:self.mapReport.reports];
+}
+
 - (NSArray *)rightButtons
 {
     NSMutableArray *rightUtilityButtons = [NSMutableArray new];
