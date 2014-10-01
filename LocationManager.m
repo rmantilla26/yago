@@ -28,23 +28,31 @@
     return self;
 }
 - (void)currentLocationSuccess:(CurrentLocationSuccessBlock)success failure:(CurrentLocationFailureBlock)failure {
-    NSLog(@"gimme location");
     self.updatedLocation = NO;
     [self.locationManager startUpdatingLocation];
+    
+    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) { // iOS8+
+        // Sending a message to avoid compile time error
+        [[UIApplication sharedApplication] sendAction:@selector(requestWhenInUseAuthorization)
+                                                   to:self.locationManager
+                                                 from:self
+                                             forEvent:nil];
+    }
+    
+    /*
     if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
         [self.locationManager requestWhenInUseAuthorization];
     }
+     */
+    
     self.currentLocationSuccessBlock = success;
     self.currentLocationFailureBlock = failure;
 }
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    NSLog(@"got location");
     if (!self.updatedLocation) {
-        NSLog(@"this location i want");
         self.updatedLocation = YES;
         [self.locationManager stopUpdatingLocation];
     } else return;
-    NSLog(@"want indeed");
     CLLocation *lastLocation = locations.lastObject;
     double latitude = lastLocation.coordinate.latitude;
     double longitude = lastLocation.coordinate.longitude;

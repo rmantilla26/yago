@@ -15,6 +15,7 @@
 
 @property(nonatomic,strong) MapReport *mapReport;
 @property (weak, nonatomic) IBOutlet UITableView *reportTableView;
+@property (strong, nonatomic) UIRefreshControl *refreshControl;
 
 @end
 
@@ -31,7 +32,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     [self loadReports];
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(loadReports) forControlEvents:UIControlEventValueChanged];
+    [self.reportTableView addSubview:self.refreshControl];
 }
 
 -(void)loadReports{
@@ -42,6 +48,7 @@
         }else{
             NSLog(@"ERROR ");
         }
+        [self.refreshControl endRefreshing];
     }];
 }
 
@@ -89,6 +96,10 @@
     return [self.mapReport.reports count];
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return REPORT_TABLE_TITLE;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"YAGReportTVCellID";
     YAGReportTVCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -96,10 +107,13 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"YAGReportTVCell" owner:self options:nil];
         cell = (YAGReportTVCell *) [nib objectAtIndex:0];
     }
-    
-    Report *report = [self.mapReport.reports objectAtIndex:indexPath.row];
-    cell._description.text = [report.objectId description];
-
+    @try {
+        Report *report = [self.mapReport.reports objectAtIndex:indexPath.row];
+        cell._description.text = [report.objectId description];
+    }
+    @catch (NSException *exception) {
+        cell._description.text = @"Indefinido";
+    }
     return cell;
 }
  

@@ -14,3 +14,5 @@
 #define DEFAULT_LONGITUDE -74.80820097170515
 #define MAP_ZOOM 12
 
+#define REPORT_TABLE_TITLE @"Reportes"
+
