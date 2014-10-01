@@ -78,6 +78,11 @@
             self.circ.strokeWidth = 1;
             self.circ.map = self.mapView;
     }
+    
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:self.latitude
+                                                            longitude:self.longitude
+                                                                 zoom:MAP_ZOOM];
+    self.mapView.camera = camera;
 }
 
 -(void)showMarkWithIndex:(Report *)report{
@@ -91,6 +96,11 @@
     self.circ.strokeColor = [UIColor colorWithRed:30.0/255.0 green:144.0/255.0 blue:255.0/255.0 alpha:1];
     self.circ.strokeWidth = 1;
     self.circ.map = self.mapView;
+    
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:report.latitude
+                                                            longitude:report.longitude
+                                                                 zoom:MAP_ZOOM];
+    self.mapView.camera = camera;
 }
 
 @end
