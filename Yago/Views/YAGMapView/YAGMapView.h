@@ -15,12 +15,10 @@
 
 @property(nonatomic,assign) double latitude;
 @property(nonatomic,assign) double longitude;
-@property(nonatomic,strong) IBOutlet GMSMapView *mapView;
-@property(nonatomic,strong) GMSCircle *circ;
 
 @property(nonatomic,assign) bool refreshMapCamera;
 
 -(void)addMarkToMap:(NSMutableArray *)reports;
--(void)showMarkWithIndex:(Report *)report;
+-(void)addMarkWithReport:(Report *)report removeOtherMark:(BOOL)clear;
 
 @end

@@ -14,4 +14,7 @@
 @property(nonatomic,strong) IBOutlet UILabel *_description;
 @property(nonatomic,strong) IBOutlet UIButton *_thumbnail;
 
+- (NSArray *)rightButtons;
+- (NSArray *)leftButtons;
+
 @end
