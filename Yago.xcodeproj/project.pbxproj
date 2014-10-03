@@ -25,6 +25,8 @@
 		ED16ACAB19DA5E0A009347F1 /* YAGMapReportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED16ACA519DA5E09009347F1 /* YAGMapReportVC.m */; };
 		ED16ACAC19DA5E0A009347F1 /* YAGReportTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED16ACA919DA5E09009347F1 /* YAGReportTVCell.m */; };
 		ED16ACAD19DA5E0A009347F1 /* YAGReportTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED16ACAA19DA5E0A009347F1 /* YAGReportTVCell.xib */; };
+		ED1C88E719DE2C360014EAFC /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1C88E619DE2C360014EAFC /* Event.m */; };
+		ED1C88EA19DE337B0014EAFC /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1C88E919DE337B0014EAFC /* User.m */; };
 		ED70246B19B748380014814C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED70246A19B748380014814C /* Foundation.framework */; };
 		ED70246D19B748380014814C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED70246C19B748380014814C /* CoreGraphics.framework */; };
 		ED70246F19B748380014814C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED70246E19B748380014814C /* UIKit.framework */; };
@@ -106,6 +108,10 @@
 		ED16ACA819DA5E09009347F1 /* YAGReportTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAGReportTVCell.h; sourceTree = "<group>"; };
 		ED16ACA919DA5E09009347F1 /* YAGReportTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAGReportTVCell.m; sourceTree = "<group>"; };
 		ED16ACAA19DA5E0A009347F1 /* YAGReportTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YAGReportTVCell.xib; sourceTree = "<group>"; };
+		ED1C88E519DE2C360014EAFC /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		ED1C88E619DE2C360014EAFC /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		ED1C88E819DE337B0014EAFC /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		ED1C88E919DE337B0014EAFC /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		ED70246719B748380014814C /* Yago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED70246A19B748380014814C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ED70246C19B748380014814C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -401,10 +407,14 @@
 		ED7024AC19B748930014814C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ED1C88E819DE337B0014EAFC /* User.h */,
+				ED1C88E919DE337B0014EAFC /* User.m */,
 				ED16AC8719DA5CC2009347F1 /* MapReport.h */,
 				ED16AC8819DA5CC2009347F1 /* MapReport.m */,
 				ED16AC8419DA5CAE009347F1 /* Report.h */,
 				ED16AC8519DA5CAE009347F1 /* Report.m */,
+				ED1C88E519DE2C360014EAFC /* Event.h */,
+				ED1C88E619DE2C360014EAFC /* Event.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -526,6 +536,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED1C88EA19DE337B0014EAFC /* User.m in Sources */,
 				9AA0CC1919DB12CB0029030D /* LocationManager.m in Sources */,
 				ED16AC8919DA5CC2009347F1 /* MapReport.m in Sources */,
 				ED16AC8619DA5CAE009347F1 /* Report.m in Sources */,
@@ -538,6 +549,7 @@
 				9A67F04619DCA815007687CB /* SWUtilityButtonView.m in Sources */,
 				9A67F04319DCA815007687CB /* SWLongPressGestureRecognizer.m in Sources */,
 				9A67F04219DCA815007687CB /* SWCellScrollView.m in Sources */,
+				ED1C88E719DE2C360014EAFC /* Event.m in Sources */,
 				ED16ACAB19DA5E0A009347F1 /* YAGMapReportVC.m in Sources */,
 				9A67F04119DCA815007687CB /* NSMutableArray+SWUtilityButtons.m in Sources */,
 			);

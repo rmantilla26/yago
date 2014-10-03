@@ -6,7 +6,9 @@
 //  Copyright (c) 2014 koombea. All rights reserved.
 //
 
-#define PARSE_REPORT @"Raining"
+#define PARSE_EVENT @"Event"
+#define PARSE_REPORT @"Report"
+#define PARSE_PARTICIPANTS @"Participants"
 #define TIME -100000
 
 

@@ -8,12 +8,12 @@
 
 #import "YAGMapReportVC.h"
 #import "Report.h"
-#import "MapReport.h"
 #import "YAGReportTVCell.h"
+#import "Event.h"
 
 @interface YAGMapReportVC ()
 
-@property(nonatomic,strong) MapReport *mapReport;
+@property(nonatomic,strong) Event *event;
 @property (weak, nonatomic) IBOutlet UITableView *reportTableView;
 @property (strong, nonatomic) UIRefreshControl *refreshControl;
 
@@ -21,11 +21,12 @@
 
 @implementation YAGMapReportVC
 
--(MapReport *)mapReport{
-    if (!_mapReport) {
-        _mapReport = [[MapReport alloc]init];
+
+-(Event *)event{
+    if (!_event) {
+        _event = [[Event alloc]init];
     }
-    return _mapReport;
+    return _event;
 }
 
 - (void)viewDidLoad
@@ -33,17 +34,31 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self loadReports];
+    //[self loadReports];
     
+    [self loadEvent];
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(loadReports) forControlEvents:UIControlEventValueChanged];
     [self.reportTableView addSubview:self.refreshControl];
 }
 
--(void)loadReports{
-    [self.mapReport loadReportsWithBlock:^(bool response) {
+-(void)loadEvent{
+ 
+    [self.event loadEvent:@"upgqY1CnZx" WithReportsAndParticipantsWithBlock:^(bool response) {
         if (response) {
-            NSLog(@"%@",self.mapReport.reports);
+            NSLog(@"%@",self.event);
+            NSLog(@"%@",self.event.reports);
+            [self loadReports];
+        }else{
+            NSLog(@"ERROR ");
+        }
+    }];
+}
+
+-(void)loadReports{
+    [self.event loadReportsWithBlock:^(bool response) {
+        if (response) {
+            NSLog(@"%@",self.event.reports);
             [self refreshReportTable];
         }else{
             NSLog(@"ERROR ");
@@ -85,7 +100,7 @@
 
 -(void)refreshReportTable{
     [self.reportTableView reloadData];
-    [self addMarkToMap:self.mapReport.reports];
+    [self addMarkToMap:self.event.reports];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -93,7 +108,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [self.mapReport.reports count];
+    return [self.event.reports count];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
@@ -112,7 +127,7 @@
     }
     
     @try {
-        Report *report = [self.mapReport.reports objectAtIndex:indexPath.row];
+        Report *report = [self.event.reports objectAtIndex:indexPath.row];
         cell._description.text = [report.objectId description];
     }
     @catch (NSException *exception) {
@@ -122,11 +137,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    Report *report = [self.mapReport.reports objectAtIndex:indexPath.row];
+    Report *report = [self.event.reports objectAtIndex:indexPath.row];
     [self addMarkWithReport:report removeOtherMark:YES];
 }
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self addMarkToMap:self.mapReport.reports];
+    [self addMarkToMap:self.event.reports];
 }
 
 #pragma mark - SWTableViewDelegate
