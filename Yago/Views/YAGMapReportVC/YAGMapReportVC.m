@@ -73,7 +73,16 @@
     
     self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
     
-    [self  presentViewController:reportAddVC animated:YES completion:nil];
+    UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, NO, 0);
+    
+    [self.view drawViewHierarchyInRect:self.view.bounds afterScreenUpdates:YES];
+    
+    UIImage *copiedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    [self  presentViewController:reportAddVC animated:YES completion:^{
+        [reportAddVC.view setBackgroundColor:[UIColor colorWithPatternImage:copiedImage]];
+    }];
     
 
     
@@ -237,6 +246,8 @@
     
     return YES;
 }
+
+
  
 
 @end
