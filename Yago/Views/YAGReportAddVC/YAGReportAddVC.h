@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YAGMapView.h"
 
-@interface YAGReportAddVC : UIViewController
+@interface YAGReportAddVC : YAGMapView
 
 @end

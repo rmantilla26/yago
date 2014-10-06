@@ -30,7 +30,7 @@
 }
 
 -(IBAction)close:(id)sender{
-    [self dismissViewControllerAnimated:YES completion:^{
+    [self dismissViewControllerAnimated:NO completion:^{
         //code
     }];
 }
