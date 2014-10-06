@@ -15,6 +15,7 @@
 
 @property(nonatomic,assign) double latitude;
 @property(nonatomic,assign) double longitude;
+@property(nonatomic,assign) int zoom;
 
 @property(nonatomic,assign) bool refreshMapCamera;
 

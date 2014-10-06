@@ -78,9 +78,16 @@
 
 -(void)setCameraPositionWithLatitude:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude
 {
+    int localZoom = MAP_ZOOM;
+    
+    if (self.zoom) {
+        localZoom = self.zoom;
+    }
+    
+    
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:latitude
                                                             longitude:longitude
-                                                                 zoom:MAP_ZOOM];
+                                                                 zoom:localZoom];
     [self.mapView animateToCameraPosition:camera];
 }
 

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "YAGMapView.h"
 
-@interface YAGReportAddVC : YAGMapView
+@interface YAGReportAddVC : YAGMapView<UITextViewDelegate>
 
 @end

@@ -23,3 +23,4 @@
 #define LOCATION_NOT_AVAILABLE_TITLE @"Ubicación no disponible"
 #define LOCATION_NOT_AVAILABLE_DESCRIPTION @"Intentamos saber donde estas para mostrarte información precisa, pero no fue posible. Verifica los permisos que tenemos en Ajustes/Privacidad/Localización "
 
+#define TEXTVIEW_PLACEHOLDER @"Escribe aquí tu comentario"
