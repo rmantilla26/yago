@@ -7,8 +7,9 @@
 //
 
 #import "YAGMapReportVC.h"
-#import "Report.h"
 #import "YAGReportTVCell.h"
+#import "YAGReportAddVC.h"
+#import "Report.h"
 #import "Event.h"
 
 @interface YAGMapReportVC ()
@@ -44,10 +45,9 @@
 
 -(void)loadEvent{
  
-    [self.event loadEvent:@"upgqY1CnZx" WithReportsAndParticipantsWithBlock:^(bool response) {
+    [self.event loadEvent:@"upgqY1CnZx" WithBlock:^(bool response) {
         if (response) {
             NSLog(@"%@",self.event);
-            NSLog(@"%@",self.event.reports);
             [self loadReports];
         }else{
             NSLog(@"ERROR ");
@@ -68,9 +68,20 @@
 }
 
 - (IBAction)clickedReportButton:(UIButton *)sender {
+    
+    YAGReportAddVC * reportAddVC = [[YAGReportAddVC alloc]initWithNibName:@"YAGReportAddVC" bundle:nil];
+    
+    self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
+    
+    [self  presentViewController:reportAddVC animated:YES completion:nil];
+    
+
+    
+    /*
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Reportar" message:@"Quieres reportar lluvia?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Si",nil];
     alert.tag = 1;
     [alert show];
+     */
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
@@ -81,17 +92,13 @@
         report.longitude = self.longitude;
         report.latitude = self.latitude;
         
-        [report addReport:report withBlock:^(bool response) {
-            
-            //self.circ = nil;
-            
+        [self.event addReport:report withBlock:^(bool response) {
             if (response) {
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Esta lloviendo!" message:@"Gracias por avisarnos" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Esta lloviendo!" message:@"Gracias por avisarnos" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                 [alert show];
             }else{
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upps!" message:@"No pudimos registrar tu aviso" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upps!" message:@"No pudimos registrar tu aviso" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                 [alert show];
-
             }
         }];
     }

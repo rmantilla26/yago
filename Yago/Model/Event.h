@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Constants.h"
+@class Report;
 
 @interface Event : NSObject
 
@@ -25,5 +26,5 @@
 -(void)loadReportsWithBlock:(void (^)(bool response))block;
 -(void)loadParticipantsWithBlock:(void (^)(bool response))block;
 -(void)loadEvent:(NSString *)objectId WithReportsAndParticipantsWithBlock:(void (^)(bool response))block;
-
+-(void)addReport:(Report *)report withBlock:(void (^)(bool response))block;
 @end

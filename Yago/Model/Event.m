@@ -37,26 +37,28 @@
 
 -(void)loadEvent:(NSString *)objectId WithReportsAndParticipantsWithBlock:(void (^)(bool response))block{
     
-    PFObject *query = [PFObject objectWithoutDataWithClassName:PARSE_EVENT objectId:objectId];
-    PFRelation *relation = [query relationForKey:@"reports"];
-    //[query whereKey:@"objectId" equalTo:objectId];
+    PFQuery *query = [PFQuery queryWithClassName:PARSE_REPORT];
+    [query whereKey:@"objectId" equalTo:objectId];
     
     // Retrieve the most recent ones
-    //[query orderByDescending:@"createdAt"];
+    [query orderByDescending:@"createdAt"];
     
     // Only retrieve the last ten
-    //query.limit = 1000;
+    query.limit = 1000;
     
     // Include the reports data
-    //[query includeKey:PARSE_REPORT];
+    [query includeKey:PARSE_EVENT];
     // Include the participants data
     //[event includeKey:PARSE_PARTICIPANTS];
     
-    [[relation query] findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        
+    [query findObjectsInBackgroundWithBlock:^(NSArray *comments, NSError *error) {
+        // Comments now contains the last ten comments, and the "post" field
+        // has been populated. For example:
+        for (PFObject *comment in comments) {
             // This does not require a network access.
-            NSLog(@"retrieved related post: %@", objects);
-        
+            PFObject *post = comment[@"reports"];
+            NSLog(@"retrieved related post: %@", post);
+        }
     }];
     /*
     [event getObjectInBackgroundWithId:objectId block:^(PFObject *object, NSError *error) {
