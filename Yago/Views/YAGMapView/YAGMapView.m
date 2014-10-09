@@ -76,6 +76,7 @@
 }
 
 
+
 -(void)setCameraPositionWithLatitude:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude
 {
     int localZoom = MAP_ZOOM;
@@ -91,10 +92,18 @@
     [self.mapView animateToCameraPosition:camera];
 }
 
+-(void)zoomCameraToUserPosition{
+    self.zoom = 17;
+    [self setCameraPositionWithLatitude:self.latitude longitude:self.longitude];
+}
+
+
 
 -(void)addMarkToMap:(NSMutableArray *)reports{
     
     [self.mapView clear];
+    
+    self.zoom = MAP_ZOOM;
     
     for (Report *report in reports) {
         [self addMarkWithReport:report removeOtherMark:NO];
@@ -108,6 +117,8 @@
     if (clear) {
         [self.mapView clear];
     }
+    
+    self.zoom = MAP_ZOOM;
     
     CLLocationCoordinate2D circleCenter = CLLocationCoordinate2DMake(report.latitude, report.longitude);
     

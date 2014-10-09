@@ -22,4 +22,6 @@
 -(void)addMarkToMap:(NSMutableArray *)reports;
 -(void)addMarkWithReport:(Report *)report removeOtherMark:(BOOL)clear;
 
+-(void)zoomCameraToUserPosition;
+
 @end

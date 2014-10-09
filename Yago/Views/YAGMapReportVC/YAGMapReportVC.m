@@ -12,11 +12,15 @@
 #import "Report.h"
 #import "Event.h"
 
+
 @interface YAGMapReportVC ()
 
 @property(nonatomic,strong) Event *event;
 @property (weak, nonatomic) IBOutlet UITableView *reportTableView;
 @property (strong, nonatomic) UIRefreshControl *refreshControl;
+@property(nonatomic,strong) IBOutlet UITextField *textField;
+@property(nonatomic,strong) IBOutlet UIView *textFieldView;
+@property(nonatomic,strong) IBOutlet UIButton *markButton;
 
 @end
 
@@ -40,6 +44,8 @@
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(loadReports) forControlEvents:UIControlEventValueChanged];
     [self.reportTableView addSubview:self.refreshControl];
+    
+    [self setToolBarToKeyBoard];
 }
 
 -(void)loadEvent{
@@ -66,8 +72,38 @@
     }];
 }
 
+-(void)setToolBarToKeyBoard{
+    
+    self.textFieldView.hidden = YES;
+    self.markButton.hidden = NO;
+    
+    UIToolbar* toolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
+    toolbar.barStyle =  (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7") ?  UIBarStyleDefault : UIBarStyleBlack);
+    toolbar.translucent = YES;
+    
+    toolbar.items = [NSArray arrayWithObjects:
+                     [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
+                     [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(hideActiveKeyboard)],
+                     nil];
+    [toolbar sizeToFit];
+    
+    
+}
+
+-(IBAction)hideActiveKeyboard{
+    [self.textField resignFirstResponder];
+    self.textFieldView.hidden = YES;
+    self.markButton.hidden = NO;
+    [self refreshReportTable];
+}
+
 - (IBAction)clickedReportButton:(UIButton *)sender {
     
+    [self.textField becomeFirstResponder];
+    self.textFieldView.hidden = NO;
+    self.markButton.hidden = YES;
+    [self zoomCameraToUserPosition];
+     /*
     YAGReportAddVC * reportAddVC = [[YAGReportAddVC alloc]initWithNibName:@"YAGReportAddVC" bundle:nil];
     
     self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
@@ -85,7 +121,7 @@
     
 
     
-    /*
+   
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Reportar" message:@"Quieres reportar lluvia?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Si",nil];
     alert.tag = 1;
     [alert show];

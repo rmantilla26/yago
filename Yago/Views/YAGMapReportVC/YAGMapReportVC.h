@@ -10,6 +10,6 @@
 #import "YAGMapView.h"
 #import "SWTableViewCell.h"
 
-@interface YAGMapReportVC : YAGMapView<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate,SWTableViewCellDelegate>
+@interface YAGMapReportVC : YAGMapView<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate,SWTableViewCellDelegate,UITextFieldDelegate>
 
 @end

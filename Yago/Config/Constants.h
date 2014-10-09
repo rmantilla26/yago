@@ -6,6 +6,11 @@
 //  Copyright (c) 2014 koombea. All rights reserved.
 //
 
+//iOS version
+
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
 #define PARSE_EVENT @"Event"
 #define PARSE_REPORT @"Report"
 #define PARSE_PARTICIPANTS @"Participants"
